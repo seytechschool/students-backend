@@ -1,5 +1,7 @@
 # Students Project backend
 
+> client for this project is located in here: https://github.com/seytechschool/students-client
+
 ## Stack:
 
 - NodeJS,
