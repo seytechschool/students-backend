@@ -64,12 +64,13 @@ router.delete('/students', async (req, res) => {
 // UPDATE - a student
 router.put('/students', async (req, res) => {
   const { id } = req.query;
-  const { firstName, lastName, bio } = req.query;
+  const { firstName, lastName, email, bio } = req.query;
 
   try {
     const updatedStudent = await Students.findByIdAndUpdate(id, {
       firstName,
       lastName,
+      email,
       bio,
     });
     res.json({
